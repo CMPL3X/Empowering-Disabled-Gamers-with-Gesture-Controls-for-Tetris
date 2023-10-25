@@ -6,7 +6,7 @@ from pycoral.utils.edgetpu import make_interpreter
 from pycoral.adapters import common
 from pycoral.adapters import classify
 
-modelPath = '/TestModel/modelEdgetpu.tflite'
+modelPath = '/TestModel/model-edgetpu.tflite'
 labelPath = '/TestModel/labels.txt'
 
 def classifyImage(interpreter, image):
