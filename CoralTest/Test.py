@@ -12,8 +12,7 @@ labelPath = '\TestModel\labels.txt'
 
 def classifyImage(interpreter, image):
     size = common.input_size(interpreter)
-    common.set_input(interpreter, cv2.resize(image, size, fx=0, fy=0,
-                                             interpolation=cv2.INTER_CUBIC))
+    common.set_input(interpreter, cv2.resize(image, size, fx=0, fy=0, interpolation=cv2.INTER_CUBIC))
     interpreter.invoke()
     return classify.get_classes(interpreter)
 
@@ -22,7 +21,7 @@ def main():
     interpreter.allocate_tensors()
     labels = read_label_file(labelPath)
 
-    cap = cv2.VideoCapture(0)
+    cap = cv2.VideoCapture(1)
     
     while cap.isOpened():
         ret, frame = cap.read()
