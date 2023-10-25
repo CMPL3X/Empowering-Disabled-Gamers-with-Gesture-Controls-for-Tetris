@@ -1,3 +1,7 @@
+import warnings
+
+warnings.filterwarnings("ignore", category=FutureWarning, module="numpy")
+
 import tensorflowjs as tfjs
 import numpy as np
 import cv2
