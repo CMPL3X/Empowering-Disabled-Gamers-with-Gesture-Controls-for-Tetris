@@ -1,0 +1,15 @@
+1 By Device Index:
+If your USB camera is the only camera connected, you can specify its device index.
+The device index 0 represents the default camera, and other cameras are typically assigned higher indices.
+For example, if your USB camera is the second camera connected, you can specify it like this:
+
+cap = cv2.VideoCapture(1)  # Use device index 1 for the second camera
+Adjust the index accordingly based on your system setup.
+
+
+
+2 By URI (if supported by your camera):
+Some USB cameras support using URIs for device identification. In this case, you can specify the camera by its URI:
+
+cap = cv2.VideoCapture("your_camera_uri_here")
+Replace "your_camera_uri_here" with the actual URI of your USB camera if it supports this method.
