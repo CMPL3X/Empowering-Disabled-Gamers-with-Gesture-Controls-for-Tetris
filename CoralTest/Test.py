@@ -7,8 +7,8 @@ from pycoral.adapters import common
 from pycoral.adapters import classify
 
 # Replace these with the actual paths to your model and label files
-modelPath = '\TestModel\model_edgetpu.tflite'
-labelPath = '\TestModel\labels.txt'
+modelPath = '/TestModel/model_edgetpu.tflite'
+labelPath = '/TestModel/labels.txt'
 
 def classifyImage(interpreter, image):
     size = common.input_size(interpreter)
