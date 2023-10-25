@@ -1,0 +1,12 @@
+1) Download python
+2) Downlaod Anaconda
+3) conda create --name tensorflow python = 3.11.2  https://www.tensorflow.org/install/pip#windows-native
+    activate tensorflow
+    pip install tensorflow
+    pip install tensorflow-gpu
+4) Make a model!
+5) TensorFlow.js download model
+6) download the github files and unzip everything. Put all the files in one folder
+7) Change the location of the model, line : model = tfjs.converters.load_keras_model('your model location')
+    Also use \\ not \ when writing location! Example : model = tfjs.converters.load_keras_model('C:\\Users\\Model.json')
+8) Run the code!
