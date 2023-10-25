@@ -6,6 +6,7 @@ from pycoral.utils.edgetpu import make_interpreter
 from pycoral.adapters import common
 from pycoral.adapters import classify
 
+# Replace these with the actual paths to your model and label files
 modelPath = 'model_edgetpu.tflite'
 labelPath = 'labels.txt'
 
@@ -20,7 +21,7 @@ def main():
     interpreter.allocate_tensors()
     labels = read_label_file(labelPath)
 
-    cap = cv2.VideoCapture(1)
+    cap = cv2.VideoCapture(0)
     
     while cap.isOpened():
         ret, frame = cap.read()
@@ -44,7 +45,12 @@ def main():
         if cv2.waitKey(1) & 0xFF == ord('q'):
             break
 
-    cap.release()
+    # Release the camera stream within a try-except block
+    try:
+        cap.release()
+    except cv2.error as e:
+        print(f"An error occurred while releasing the camera: {e}")
+
     cv2.destroyAllWindows()
 
 if __name__ == '__main__':
