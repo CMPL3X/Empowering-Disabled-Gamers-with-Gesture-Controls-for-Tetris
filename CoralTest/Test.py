@@ -49,7 +49,7 @@ def main():
     try:
         cap.release()
     except cv2.error as e:
-        print(f"An error occurred while releasing the camera: {e}")
+        print("An error occurred while releasing the camera: {}".format(e))
 
     cv2.destroyAllWindows()
 
