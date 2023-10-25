@@ -1,4 +1,6 @@
-1 By Device Index:
+Option 1
+
+By Device Index:
 If your USB camera is the only camera connected, you can specify its device index.
 The device index 0 represents the default camera, and other cameras are typically assigned higher indices.
 For example, if your USB camera is the second camera connected, you can specify it like this:
@@ -6,9 +8,16 @@ For example, if your USB camera is the second camera connected, you can specify 
 cap = cv2.VideoCapture(1)  # Use device index 1 for the second camera
 Adjust the index accordingly based on your system setup.
 
+You can find out camera port with theese commands :
+1    sudo apt-get install v4l-utils
+2    v4l2-ctl --list-devices
 
 
-2 By URI (if supported by your camera):
+
+
+Option 2
+
+By URI (if supported by your camera):
 Some USB cameras support using URIs for device identification. In this case, you can specify the camera by its URI:
 
 cap = cv2.VideoCapture("your_camera_uri_here")
