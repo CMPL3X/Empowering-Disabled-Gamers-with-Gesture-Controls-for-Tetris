@@ -6,8 +6,8 @@ from pycoral.utils.edgetpu import make_interpreter
 from pycoral.adapters import common
 from pycoral.adapters import classify
 
-modelPath = '/TestModel/model_edgetpu.tflite'
-labelPath = '/TestModel/labels.txt'
+modelPath = 'model_edgetpu.tflite'
+labelPath = 'labels.txt'
 
 def classifyImage(interpreter, image):
     size = common.input_size(interpreter)
