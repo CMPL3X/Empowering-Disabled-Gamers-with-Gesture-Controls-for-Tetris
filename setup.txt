@@ -10,3 +10,16 @@
 7) Change the location of the model, line : model = tfjs.converters.load_keras_model('your model location')
     Also use \\ not \ when writing location! Example : model = tfjs.converters.load_keras_model('C:\\Users\\Model.json')
 8) Run the code!
+
+
+
+Setup :
+S1) Install anaconda, mscode, python
+S2) pip install --upgrade numpy
+S3) conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+S4) python -m pip install "tensorflow<2.11"
+S5) pip install tensorflowjs==3.7.0
+S6) pip install protobuf==3.20.0
+S7) pip install opencv-python
+S8) Noteste ar cameraTest.py camera inputs un pie cap = cv2.VideoCapture(x) ievieto numuru
+S9) Uz visiem palaiz test
