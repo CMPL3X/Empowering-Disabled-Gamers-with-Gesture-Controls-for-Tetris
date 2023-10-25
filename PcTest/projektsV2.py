@@ -10,8 +10,6 @@ model = tfjs.converters.load_keras_model('C:\\Users\\54132\\OneDrive\\Dators\\Ca
 
 cap = cv2.VideoCapture(1)
 
-Vards = input("Kā tevi sauc? : ")
-
 while True:
 
     ret, frame = cap.read()
@@ -24,9 +22,9 @@ while True:
     prediction = model.predict(frame)
 
     if prediction[0][0] > prediction[0][1]:
-        print(Vards + " ir priecīgs")
+        print("0")
     else:
-        print(Vards + " ir dusmīgs")
+        print("1")
 
     frame = (frame * 255).astype(np.uint8)
     cv2.imshow('frame', cv2.cvtColor(frame[0], cv2.COLOR_RGB2BGR))

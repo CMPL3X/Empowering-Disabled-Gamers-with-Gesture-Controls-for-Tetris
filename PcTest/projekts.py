@@ -26,9 +26,9 @@ while True:
     print(prediction)
 
     if prediction[0][0] > prediction[0][1]:
-        print("Happy")
+        print("1")
     else:
-        print("Sad")
+        print("0")
 
     cv2.imshow('frame', cv2.cvtColor(frame[0].astype(np.uint8), cv2.COLOR_RGB2BGR)) # Convert image depth back to uint8
 
