@@ -1,5 +1,3 @@
-# -*- coding: utf-8 -*-
-
 import re
 import os
 import cv2
@@ -8,8 +6,7 @@ from pycoral.utils.edgetpu import make_interpreter
 from pycoral.adapters import common
 from pycoral.adapters import classify
 
-# Replace these with the actual paths to your model and label files
-modelPath = '/TestModel/model_edgetpu.tflite'
+modelPath = '/TestModel/modelEdgetpu.tflite'
 labelPath = '/TestModel/labels.txt'
 
 def classifyImage(interpreter, image):
