@@ -2,8 +2,11 @@ import tensorflowjs as tfjs
 import numpy as np
 import time
 import cv2
+import warnings
 
-model = tfjs.converters.load_keras_model('C:\\Users\\54132\\OneDrive\\Dators\\Test\\tm-my-image-model\\model.json')
+warnings.filterwarnings("ignore", category=FutureWarning, module="numpy")
+
+model = tfjs.converters.load_keras_model('C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\PcTest\\tm-my-image-model\\model.json')
 
 cap = cv2.VideoCapture(1) #Change the camera port
 

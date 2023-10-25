@@ -1,0 +1,15 @@
+1) Install py and mscode un tad cmd "python.exe -m pip install --upgrade pip"
+2) pip install --upgrade numpy
+3) install Microsoft Visual C++ 14.0 https://visualstudio.microsoft.com/visual-cpp-build-tools/
+Open the Visual Studio Installer.
+Click on "Modify" on your Visual Studio installation.
+Select the "Individual components" tab.
+Scroll down and locate "MSVC v140 - VS 2015 C++ build tools (v14.00)".
+Check the box to select it.
+Click on the "Modify" button to start the installation.
+4) "pip install tensorflowjs==3.7.0 opencv-python==4.5.3.56"
+5) pip install --upgrade numpy
+6) conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+7) python -m pip install "tensorflow<2.11"
+8) python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+9) pip install tensorflowjs==3.7.0 opencv-python==4.5.3.56
