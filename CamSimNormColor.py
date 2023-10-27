@@ -6,15 +6,13 @@ import cv2
 import numpy as np
 import pyvirtualcam
 
-CamFps = 60 # Set fps
-
 # Load the pre-trained face detection model
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
 # Set the desired brightness level
 desired_brightness = 1.5  # Adjust this value to control the brightness (1.0 is no change)
 
-with pyvirtualcam.Camera(width=320, height=240, fps=CamFps) as cam:
+with pyvirtualcam.Camera(width=640, height=480, fps=30) as cam:
     while True:
         # Capture a frame from the webcam
         cap = cv2.VideoCapture(0)  # Use 0 for the default webcam, or change to the appropriate camera index
@@ -36,6 +34,9 @@ with pyvirtualcam.Camera(width=320, height=240, fps=CamFps) as cam:
 
             # Adjust brightness
             face = cv2.convertScaleAbs(face, alpha=desired_brightness, beta=0)
+
+            # Convert the processed frame back to BGR color format
+            face = cv2.cvtColor(face, cv2.COLOR_BGRA2BGR)
 
             # Resize the processed frame to match the virtual camera dimensions
             resized_face = cv2.resize(face, (cam.width, cam.height))
