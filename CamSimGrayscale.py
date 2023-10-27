@@ -32,8 +32,11 @@ with pyvirtualcam.Camera(width=640, height=480, fps=30) as cam:
             # Convert the processed frame to grayscale
             gray_face = cv2.cvtColor(face, cv2.COLOR_BGR2GRAY)
 
+            # Convert the grayscale image back to BGR format
+            gray_face_bgr = cv2.cvtColor(gray_face, cv2.COLOR_GRAY2BGR)
+
             # Resize the processed frame to match the virtual camera dimensions
-            resized_face = cv2.resize(gray_face, (cam.width, cam.height))
+            resized_face = cv2.resize(gray_face_bgr, (cam.width, cam.height))
 
             # Send the frame to the virtual camera
             cam.send(resized_face)
