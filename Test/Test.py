@@ -9,9 +9,9 @@ import numpy as np
 import io
 from PIL import Image
 
-camera_port = 2 # REPLACE this with your accual camera port. You can check with the cameraPortTest.py code
+camera_port = 2 # !!! REPLACE this with your accual camera port. You can check with the cameraPortTest.py code
 
-# Replace these paths with the absolute paths to your model and labels files
+# !!! REPLACE these paths with the absolute paths to your model and labels files
 model_path = "C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\Test\\keras_model.h5"
 labels_path = "C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\Test\\labels.txt"
 
