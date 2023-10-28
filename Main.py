@@ -14,7 +14,7 @@ import io
 from PIL import Image
 import time
 
-countdown_seconds = 2 # If you need more time before the code starts, change this.
+countdown_seconds = 30 # If you need more time before the code starts, change this.
 
 camera_port = 2 # !!! REPLACE this with your accual camera port. You can check with the cameraPortTest.py code
 
