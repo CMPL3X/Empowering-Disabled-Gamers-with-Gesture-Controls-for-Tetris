@@ -37,24 +37,20 @@ while True:
 
     # Print prediction and confidence score
     print("Class Index:", class_index)
-    print("Class Name:", class_name)
     print("Class Confidence:", class_confidence)
     print("Predictions:", predictions)
 
     # Show the image in a window
     cv2.imshow("Webcam Image", img)
 
-    # Check if the class name is one of your predefined classes (0, 1, 2, 3)
-    if class_name in ["0", "1", "2", "3"]:
-        # Handle the specific class
-        if class_name == "0":
-            print("Detected class 0")
-        elif class_name == "1":
-            print("Detected class 1")
-        elif class_name == "2":
-            print("Detected class 2")
-        elif class_name == "3":
-            print("Detected class 3")
+    if class_index == 0:
+        print("Detected class 0")
+    if class_index == 1:
+        print("Detected class 1")
+    if class_index == 2:
+        print("Detected class 2")
+    if class_index == 3:
+        print("Detected class 3")
 
     # Listen to the keyboard for presses
     keyboard_input = cv2.waitKey(1)
