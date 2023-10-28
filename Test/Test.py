@@ -2,7 +2,7 @@
 # Just put both (the .h5 and .txt files in the same folder!)
 # pip install teachable-machine
 # pip install opencv-python
-
+ 
 from teachable_machine import TeachableMachine
 import cv2
 import numpy as np
