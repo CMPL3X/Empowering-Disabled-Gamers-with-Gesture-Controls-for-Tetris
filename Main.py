@@ -1,4 +1,5 @@
 # This is the main code. Before start, run CamSim....py (Optional)
+# You can find instructions in hackster.io
 # Remember to put both (the .h5 and .txt files in the same folder!)
 # Before running remember to replace camera port and paths (example given)
 # For this to run install these libraries :
