@@ -3,7 +3,7 @@ import numpy as np
 import pyvirtualcam
 
 # !!! REPLACE this paths with the absolute paths to the model
-lip_cascade = cv2.CascadeClassifier('C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\Test\\haarcascade_mcs_mouth.xml')
+lip_cascade = cv2.CascadeClassifier('Test\\haarcascade_mcs_mouth.xml')
 
 with pyvirtualcam.Camera(width=640, height=480, fps=30) as cam:
     while True:

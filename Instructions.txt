@@ -1,0 +1,20 @@
+You can find a full tutorial on Hackster.io : https://www.hackster.io/gustavsandersons/empowering-disabled-gamers-with-gesture-controlls-for-tetris-e3d5d6
+
+1) Test camera ports
+2) Choose if you want face or mouth tracking, or just use without (not recommended)
+	Insert main camera port into the CamSimFace.py / CamSimLips.py code
+3) Run the CamSimFace.py / CamSimLips.py code and check with the cameraPortTest.py
+	witch camera is the new one.
+4) Get the Main.py code and put the new generated camera port into the
+	main code.
+5) Make a model using the teachablemachine. Use the generated camera.
+6) Test if good enough (better > 200 pictures and delete bad ones)
+7) Download (Tensorflow -> Keras -> Download)
+8) Unzip
+9) Put the .h5 and .txt files you got from the teachablemachine
+	into the same folder as Main.py
+10) To run the app : first run The CamSimFace.py and then Main.py
+
+When you run the Main.py code, there will be 30 sec timer, before
+	the code starts working. It will give you time to start
+	tetr.io game.

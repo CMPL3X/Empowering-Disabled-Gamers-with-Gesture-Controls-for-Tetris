@@ -20,8 +20,8 @@ countdown_seconds = 30 # If you need more time before the code starts, change th
 camera_port = 2 # !!! REPLACE this with your accual camera port. You can check with the cameraPortTest.py code
 
 # !!! REPLACE these paths with the absolute paths to your model and labels files
-model_path = "C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\Test\\keras_model.h5"
-labels_path = "C:\\Users\\54132\\OneDrive\\Dators\\CoralTest\\Git\\Empowering-Disabled-Gamers-with-Gesture-Controls-for-Tetris\\Test\\labels.txt"
+model_path = "C:\\Users\\Admin\\Desktop\\keras_model.h5"
+labels_path = "C:\\Users\\Admin\\Desktop\\labels.txt"
 
 keyboard = Controller()
 
