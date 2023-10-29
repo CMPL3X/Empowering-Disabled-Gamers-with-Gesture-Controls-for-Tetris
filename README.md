@@ -12,7 +12,7 @@ code -> Main.py
 **What problem are you going to solve?**
 Many disabled individuals face barriers when trying to engage in online gaming, which can limit their access to entertainment, social interaction, and skill development. Traditional gaming interfaces may not be adaptable to their needs, making it difficult for them to fully participate in the gaming community.
 
-**What are you going to build to solve this problem? How is it different from existing solutions? Why is it useful?**
+~ **What are you going to build to solve this problem? How is it different from existing solutions? Why is it useful?**
 I will build an innovative and customizable solution that enables disabled gamers to enjoy a classic game, Tetris, on the online platform tetr.io, using gesture controls. Unlike existing solutions that offer limited adaptability and inclusivity, my project leverages Google Coral Dev Board Micro and Teachable Machine to provide a personalized gaming experience. Users can define their own gesture poses through Teachable Machine, which is then translated into in-game actions, fostering an inclusive and interactive gaming environment.
 
 **How does the solution work?**
@@ -60,4 +60,4 @@ My solution offers the following key features:
 * Visual studio code
 * C++, Python
 * OpenCV (maybe)
-* Tensorflow
+* Tensorflow ~
