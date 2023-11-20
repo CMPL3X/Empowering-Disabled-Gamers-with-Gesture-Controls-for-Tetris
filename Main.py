@@ -15,13 +15,20 @@ import io
 from PIL import Image
 import time
 
+#-------------------------Settings------------------------
+
 countdown_seconds = 30 # If you need more time before the code starts, change this.
 
-camera_port = 2 # !!! REPLACE this with your accual camera port. You can check with the cameraPortTest.py code
+camera_port = 2 # REPLACE this with your accual camera port. You can check with the cameraPortTest.py code!
 
-# !!! REPLACE these paths with the absolute paths to your model and labels files
+# REPLACE these paths with the absolute paths to your model and labels files!
 model_path = "C:\\Users\\Admin\\Desktop\\keras_model.h5"
 labels_path = "C:\\Users\\Admin\\Desktop\\labels.txt"
+
+# Show live webcamera image window on screen
+showimage = False
+
+#---------------------------------------------------------
 
 keyboard = Controller()
 
@@ -35,7 +42,8 @@ print("Countdown complete. Starting code!")
 model = TeachableMachine(model_path=model_path, labels_file_path=labels_path)
 
 # Open the camera stream
-cap = cv2.VideoCapture(camera_port)
+if showimage == True :
+    cap = cv2.VideoCapture(camera_port)
 
 while True:
     _, img = cap.read()
